@@ -2,7 +2,7 @@
 
 ## System Architecture
 
-![system-architecture](images/rag.png)
+![system-architecture](images/solr-ttv-demo.drawio.png)
 
 ## Environment
 

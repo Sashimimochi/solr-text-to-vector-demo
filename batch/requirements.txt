@@ -1,0 +1,12 @@
+tqdm
+langchain
+pysolr
+kazoo
+sentence-transformers
+fugashi
+ipadic
+mysql-connector-python
+eurelis-langchain-solr-vectorstore
+pandas
+langchain-community
+sentencepiece

@@ -1,0 +1,5 @@
+{
+  "class": "org.apache.solr.llm.texttovector.store.rest.TextToVectorModelStore$HuggingFaceTextToVectorModel",
+  "name": "mymodel",
+  "modelId": "intfloat/multilingual-e5-base"
+}

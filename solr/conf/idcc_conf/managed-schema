@@ -13,6 +13,7 @@
     <field name="title" type="text_ja" indexed="true" stored="true"/>
     <field name="body" type="text_ja" indexed="true" stored="true"/>
     <field name="vector" type="knn_vector" indexed="true" stored="true"/>
+    <field name="vector_query" type="knn_text_to_vector" indexed="true" stored="true"/>
     <field name="metadata_title_s" type="text_ja" indexed="true" stored="true"/>
     <field name="metadata_body_s" type="text_ja" indexed="true" stored="false"/>
     <dynamicField name="*_s" type="string" indexed="false" stored="false"/>
@@ -25,6 +26,7 @@
     <fieldType name="text_general" class="solr.TextField" positionIncrementGap="100"/>
     <fieldType name="pdate" class="solr.DatePointField" docValues="true"/>
     <fieldType name="knn_vector" class="solr.DenseVectorField" vectorDimension="768" similarityFunction="cosine"/>
+    <fieldType name="knn_text_to_vector" class="solr.DenseVectorField" vectorDimension="768" similarityFunction="cosine" model="mymodel"/>
     <fieldType name="text_ja" class="solr.TextField" positionIncrementGap="100">
         <analyzer>
             <!-- 形態素解析 -->

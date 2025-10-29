@@ -46,13 +46,18 @@ Access http://localhost:8501 by any Browser.
 
 ## Query-Time Embedding
 
-Solr 9.9.0以降では、クエリ時にもテキストから埋め込みベクトルを生成できるようになりました。
+Solr 9.9.0からは、クエリ時にもテキストから埋め込みベクトルを生成できるようになりました。
 
 ### 設定
 
 1. モデル設定ファイル（`solr/myModel.json`）を作成し、使用する埋め込みモデルを指定
 2. スキーマに `knn_text_to_vector` フィールドタイプを定義
-3. Makefileの `model-update` ターゲットでモデルをSolrに登録
+3. サービス起動後、Makefileの `model-update` ターゲットでモデルをSolrに登録
+
+```bash
+# Solr起動後に実行
+$ make model-update
+```
 
 ### 使用方法
 

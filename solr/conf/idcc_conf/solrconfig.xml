@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <config>
-    <luceneMatchVersion>9.8.0</luceneMatchVersion>
+    <luceneMatchVersion>9.9.0</luceneMatchVersion>
 
-    <lib dir="/opt/solr-9.8.0/modules/extraction/lib" regex=".*\.jar" />
-    <lib dir="/opt/solr-9.8.0/modules/langid/lib/" regex=".*\.jar" />
-    <lib dir="/opt/solr-9.8.0/modules/llm/lib/" regex=".*\.jar" />
+    <lib dir="/opt/solr-9.9.0/modules/extraction/lib" regex=".*\.jar" />
+    <lib dir="/opt/solr-9.9.0/modules/langid/lib/" regex=".*\.jar" />
+    <lib dir="/opt/solr-9.9.0/modules/llm/lib/" regex=".*\.jar" />
     <dataDir>${solr.data.dir:}</dataDir>
 
     <queryParser name="knn_text_to_vector" class="org.apache.solr.llm.texttovector.search.TextToVectorQParserPlugin"/>
